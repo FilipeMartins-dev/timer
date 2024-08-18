@@ -37,19 +37,21 @@ card2.addEventListener('click', select)
 card3.addEventListener('click', select)
 
 function select(event){
-    const target = event.target
-    const parent = target.parentElement
+    const target = event.currentTarget
+    target.classList.toggle('selected')
+
+    // const parent = target.parentElement
     // console.log(target)
     // console.log(target.parentElement)
     
-    if(target.classList.contains('number')){
-        parent.classList.toggle('selected')
-        return
-    } 
-    if(target.classList.contains('label')){
-        parent.classList.toggle('selected')
-    }
-    else{
-        target.classList.toggle('selected')
-    }
+    // if(target.classList.contains('number')){
+    //     parent.classList.toggle('selected')
+    //     return
+    // } 
+    // if(target.classList.contains('label')){
+    //     parent.classList.toggle('selected')
+    // }
+    // else{
+    //     target.classList.toggle('selected')
+    // }
 }
