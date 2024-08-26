@@ -1,3 +1,5 @@
+import { seconds, minutes, hour } from "./components.mjs"
+
 export function warningS(){
     console.log("OK")
     seconds.classList.add("selected")
