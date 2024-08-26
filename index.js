@@ -1,6 +1,5 @@
-const hour = document.querySelector('#card-hour')
-const minutes = document.querySelector('#card-minutes')
-const seconds = document.querySelector('#card-seconds')
+import { hour, minutes, seconds } from "./components.mjs"
+import { warningH, warningS } from "./warnigs.mjs"
 
 function init(){
     const date = new Date()
@@ -29,23 +28,6 @@ function init(){
     if(min == 0){
         warningH()
     }
-}
-
-function warningS(){
-    console.log("OK")
-    seconds.classList.add("selected")
-    minutes.classList.add("selected")
-    setTimeout(()=>{
-        seconds.classList.remove("selected")
-        minutes.classList.remove("selected")
-    }, 1000)
-}
-function warningH(){
-    console.log("OK")
-    hour.classList.add("selected")
-    setTimeout(()=>{
-        hour.classList.remove("selected")
-    }, 1000)
 }
 
 setInterval(init, 1000)

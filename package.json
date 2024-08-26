@@ -1,0 +1,11 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "- [x] HTML\r - [x] CSS\r - [x] JavaScript\r - [x] Git",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
